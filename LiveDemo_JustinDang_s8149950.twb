@@ -1,0 +1,955 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0804.1806                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='833f42f348575823dd8e7bd37efe06ee3ebf9e5e1679bad79f30c5f7898233b6' _.fcp.WorkbookFingerprinting.true...creator-author-id='833f42f348575823dd8e7bd37efe06ee3ebf9e5e1679bad79f30c5f7898233b6' _.fcp.WorkbookFingerprinting.true...creator-license-type='creator' _.fcp.WorkbookFingerprinting.true...creator-site-id='a17623152cda55809ea7677b939c4509e1f0f0bc078eae4efdacf08aef7d7fe4' _.fcp.WorkbookFingerprinting.true...license-type='creator' _.fcp.WorkbookFingerprinting.true...site-id='a17623152cda55809ea7677b939c4509e1f0f0bc078eae4efdacf08aef7d7fe4' locale='en_US' original-version='18.1' source-build='2026.2.5 (20262.26.0804.1806)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/nit2202/workbooks/LiveDemo_JustinDang_s8149950?rev=1.0' id='LiveDemo_JustinDang_s8149950' path='/t/nit2202/workbooks' revision='1.1' site='nit2202' />
+  <preferences />
+  <datasources>
+    <datasource caption='PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN) (ANALYTICS)' inline='true' name='federated.0scovxl1myrqld14c61zq07o2g3t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hjawbth-za63129.snowflakecomputing.com' name='snowflake.0xtfbgw0p0wq101bhq78w1r2m507'>
+            <connection authentication='Username Password' class='snowflake' dbname='S8149950_PEDESTRIAN_DB' odbc-connect-string-extras='' one-time-sql='' schema='ANALYTICS' server='hjawbth-za63129.snowflakecomputing.com' service='ACCOUNTADMIN' temp-table-detection='optimized' username='JUSTINDANG' warehouse='S8149950_WH' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='snowflake.0xtfbgw0p0wq101bhq78w1r2m507' name='PEDESTRIAN_COUNTS_CLEAN' table='[S8149950_PEDESTRIAN_DB].[ANALYTICS].[PEDESTRIAN_COUNTS_CLEAN]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RECORD_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RECORD_KEY]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>RECORD_KEY</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>134217728</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCATION_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LOCATION_ID]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>LOCATION_ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SENSOR_DISPLAY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SENSOR_DISPLAY_NAME]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>SENSOR_DISPLAY_NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>134217728</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SENSING_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SENSING_DATE]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>SENSING_DATE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SENSING_TIMESTAMP</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SENSING_TIMESTAMP]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>SENSING_TIMESTAMP</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SENSING_YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[SENSING_YEAR]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>SENSING_YEAR</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SENSING_QUARTER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[SENSING_QUARTER]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>SENSING_QUARTER</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH_NUMBER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MONTH_NUMBER]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>MONTH_NUMBER</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MONTH_NAME]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>MONTH_NAME</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>134217728</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH_START</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[MONTH_START]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>MONTH_START</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAY_OF_WEEK_NUMBER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DAY_OF_WEEK_NUMBER]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>DAY_OF_WEEK_NUMBER</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAY_OF_WEEK</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DAY_OF_WEEK]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>DAY_OF_WEEK</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IS_WEEKEND</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[IS_WEEKEND]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>IS_WEEKEND</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUR_OF_DAY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[HOUR_OF_DAY]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>HOUR_OF_DAY</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOUR_LABEL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HOUR_LABEL]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>HOUR_LABEL</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>134217728</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TIME_PERIOD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TIME_PERIOD]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>TIME_PERIOD</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>13</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TIME_PERIOD_ORDER</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[TIME_PERIOD_ORDER]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>TIME_PERIOD_ORDER</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>1</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIRECTION_1</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DIRECTION_1]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>DIRECTION_1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIRECTION_2</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[DIRECTION_2]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>DIRECTION_2</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEDESTRIAN_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PEDESTRIAN_COUNT]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>PEDESTRIAN_COUNT</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LATITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LATITUDE]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>LATITUDE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LONGITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LONGITUDE]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>LONGITUDE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IS_MAPPABLE</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[IS_MAPPABLE]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>IS_MAPPABLE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATA_QUALITY_STATUS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DATA_QUALITY_STATUS]</local-name>
+            <parent-name>[PEDESTRIAN_COUNTS_CLEAN]</parent-name>
+            <remote-alias>DATA_QUALITY_STATUS</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>23</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Data Quality Status' datatype='string' name='[DATA_QUALITY_STATUS]' role='dimension' type='nominal' />
+      <column caption='Day Of Week' datatype='string' name='[DAY_OF_WEEK]' role='dimension' type='nominal' />
+      <column caption='Day Of Week Number' datatype='integer' name='[DAY_OF_WEEK_NUMBER]' role='dimension' type='quantitative' />
+      <column caption='Direction 1' datatype='integer' name='[DIRECTION_1]' role='measure' type='quantitative' />
+      <column caption='Direction 2' datatype='integer' name='[DIRECTION_2]' role='measure' type='quantitative' />
+      <column caption='Hour Label' datatype='string' name='[HOUR_LABEL]' role='dimension' type='nominal' />
+      <column caption='Hour Of Day' datatype='integer' name='[HOUR_OF_DAY]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Is Mappable' datatype='boolean' name='[IS_MAPPABLE]' role='dimension' type='nominal' />
+      <column caption='Is Weekend' datatype='boolean' name='[IS_WEEKEND]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location Id' datatype='integer' name='[LOCATION_ID]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Month Name' datatype='string' name='[MONTH_NAME]' role='dimension' type='nominal' />
+      <column caption='Month Number' datatype='integer' name='[MONTH_NUMBER]' role='dimension' type='quantitative' />
+      <column caption='Month Start' datatype='date' name='[MONTH_START]' role='dimension' type='ordinal' />
+      <column caption='Pedestrian Count' datatype='integer' name='[PEDESTRIAN_COUNT]' role='measure' type='quantitative' />
+      <column caption='Record Key' datatype='string' name='[RECORD_KEY]' role='dimension' type='nominal' />
+      <column caption='Sensing Date' datatype='date' name='[SENSING_DATE]' role='dimension' type='ordinal' />
+      <column caption='Sensing Quarter' datatype='integer' name='[SENSING_QUARTER]' role='dimension' type='quantitative' />
+      <column caption='Sensing Timestamp' datatype='datetime' name='[SENSING_TIMESTAMP]' role='dimension' type='ordinal' />
+      <column caption='Sensing Year' datatype='integer' name='[SENSING_YEAR]' role='dimension' type='quantitative' />
+      <column caption='Sensor Display Name' datatype='string' name='[SENSOR_DISPLAY_NAME]' role='dimension' type='nominal' />
+      <column caption='Time Period' datatype='string' name='[TIME_PERIOD]' role='dimension' type='nominal' />
+      <column caption='Time Period Order' datatype='integer' name='[TIME_PERIOD_ORDER]' role='measure' type='quantitative' />
+      <column caption='PEDESTRIAN_COUNTS_CLEAN' datatype='table' name='[__tableau_internal_object_id__].[PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='PEDESTRIAN_COUNTS_CLEAN' id='PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN)_EEA31BC666164B60B2E2237EE054F1EF'>
+            <properties context=''>
+              <relation connection='snowflake.0xtfbgw0p0wq101bhq78w1r2m507' name='PEDESTRIAN_COUNTS_CLEAN' table='[S8149950_PEDESTRIAN_DB].[ANALYTICS].[PEDESTRIAN_COUNTS_CLEAN]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2_BEDF052E9B2D4A81BA004BDE3A2D42EF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Melbourne Pedestrian Dashboard' type='sheet' worksheet='Sensor Activity Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Melbourne Pedestrian Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Day-Hour Heatmap'>
+      <repository-location id='Day-HourHeatmap' path='/t/nit2202/workbooks/LiveDemo_JustinDang_s8149950' revision='' site='nit2202' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Pedestrian Traffic by Day and Hour — 2025</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN) (ANALYTICS)' name='federated.0scovxl1myrqld14c61zq07o2g3t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0scovxl1myrqld14c61zq07o2g3t'>
+            <column caption='Day Of Week' datatype='string' name='[DAY_OF_WEEK]' role='dimension' type='nominal' />
+            <column caption='Day Of Week Number' datatype='integer' name='[DAY_OF_WEEK_NUMBER]' role='dimension' type='quantitative' />
+            <column caption='Hour Of Day' datatype='integer' name='[HOUR_OF_DAY]' role='dimension' type='quantitative' />
+            <column caption='Pedestrian Count' datatype='integer' name='[PEDESTRIAN_COUNT]' role='measure' type='quantitative' />
+            <column caption='Sensing Year' datatype='integer' name='[SENSING_YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[PEDESTRIAN_COUNT]' derivation='Avg' name='[avg:PEDESTRIAN_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DAY_OF_WEEK_NUMBER]' derivation='Min' name='[min:DAY_OF_WEEK_NUMBER:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DAY_OF_WEEK]' derivation='None' name='[none:DAY_OF_WEEK:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HOUR_OF_DAY]' derivation='None' name='[none:HOUR_OF_DAY:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SENSING_YEAR]' derivation='None' name='[none:SENSING_YEAR:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:DAY_OF_WEEK:nk]' direction='ASC' using='[federated.0scovxl1myrqld14c61zq07o2g3t].[min:DAY_OF_WEEK_NUMBER:qk]' />
+          <filter class='quantitative' column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]' included-values='in-range'>
+            <min>2024</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:PEDESTRIAN_COUNT:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:DAY_OF_WEEK:nk]</rows>
+        <cols>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:HOUR_OF_DAY:ok]</cols>
+      </table>
+      <simple-id uuid='{D1A0BA56-C9CE-4F81-B799-F33D331DCA3A}' />
+    </worksheet>
+    <worksheet name='Monthly Pedestrian Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Monthly Pedestrian Traffic Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nit2202/workbooks/LiveDemo_JustinDang_s8149950/Sheet1?rev=' id='MonthlyPedestrianTrend' path='/t/nit2202/workbooks/LiveDemo_JustinDang_s8149950' revision='' site='nit2202' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN) (ANALYTICS)' name='federated.0scovxl1myrqld14c61zq07o2g3t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0scovxl1myrqld14c61zq07o2g3t'>
+            <column caption='Month Start' datatype='date' name='[MONTH_START]' role='dimension' type='ordinal' />
+            <column caption='Pedestrian Count' datatype='integer' name='[PEDESTRIAN_COUNT]' role='measure' type='quantitative' />
+            <column-instance column='[PEDESTRIAN_COUNT]' derivation='Avg' name='[avg:PEDESTRIAN_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MONTH_START]' derivation='Month-Trunc' name='[tmn:MONTH_START:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:PEDESTRIAN_COUNT:qk]</rows>
+        <cols>[federated.0scovxl1myrqld14c61zq07o2g3t].[tmn:MONTH_START:qk]</cols>
+      </table>
+      <simple-id uuid='{6DD13837-DBE7-491E-AD28-EDAC0CA5383F}' />
+    </worksheet>
+    <worksheet name='Sensor Activity Map'>
+      <repository-location id='SensorActivityMap' path='/t/nit2202/workbooks/LiveDemo_JustinDang_s8149950' revision='' site='nit2202' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Pedestrian Activity by Sensor Location — 2025</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PEDESTRIAN_COUNTS_CLEAN (S8149950_PEDESTRIAN_DB.PEDESTRIAN_COUNTS_CLEAN) (ANALYTICS)' name='federated.0scovxl1myrqld14c61zq07o2g3t' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0scovxl1myrqld14c61zq07o2g3t'>
+            <column caption='Is Mappable' datatype='boolean' name='[IS_MAPPABLE]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column caption='Location Id' datatype='integer' name='[LOCATION_ID]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Pedestrian Count' datatype='integer' name='[PEDESTRIAN_COUNT]' role='measure' type='quantitative' />
+            <column caption='Sensing Year' datatype='integer' name='[SENSING_YEAR]' role='dimension' type='quantitative' />
+            <column caption='Sensor Display Name' datatype='string' name='[SENSOR_DISPLAY_NAME]' role='dimension' type='nominal' />
+            <column-instance column='[LATITUDE]' derivation='Avg' name='[avg:LATITUDE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LONGITUDE]' derivation='Avg' name='[avg:LONGITUDE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PEDESTRIAN_COUNT]' derivation='Avg' name='[avg:PEDESTRIAN_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[IS_MAPPABLE]' derivation='None' name='[none:IS_MAPPABLE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LOCATION_ID]' derivation='None' name='[none:LOCATION_ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SENSING_YEAR]' derivation='None' name='[none:SENSING_YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SENSOR_DISPLAY_NAME]' derivation='None' name='[none:SENSOR_DISPLAY_NAME:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:IS_MAPPABLE:nk]'>
+            <groupfilter function='member' level='[none:IS_MAPPABLE:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]' included-values='in-range'>
+            <min>2024</min>
+            <max>2025</max>
+          </filter>
+          <filter class='categorical' column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSOR_DISPLAY_NAME:nk]'>
+            <groupfilter function='level-members' level='[none:SENSOR_DISPLAY_NAME:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]</column>
+            <column>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:IS_MAPPABLE:nk]</column>
+            <column>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSOR_DISPLAY_NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:LONGITUDE:qk]' field-type='quantitative' max='16138410.535386745' min='16132843.112214128' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:LATITUDE:qk]' field-type='quantitative' max='-4549198.7074654168' min='-4555912.7714274749' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:PEDESTRIAN_COUNT:qk]' />
+              <lod column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSOR_DISPLAY_NAME:nk]' />
+              <lod column='[federated.0scovxl1myrqld14c61zq07o2g3t].[none:LOCATION_ID:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:LATITUDE:qk]</rows>
+        <cols>[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:LONGITUDE:qk]</cols>
+      </table>
+      <simple-id uuid='{A7000C53-BCAD-4DEC-8B83-3D79B2552D86}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Melbourne Pedestrian Dashboard'>
+      <repository-location id='MelbournePedestrianDashboard' path='/t/nit2202/workbooks/LiveDemo_JustinDang_s8149950' revision='' site='nit2202' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Melbourne Pedestrian Activity Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97264' id='16' param='horz' type-v2='layout-flow' w='98668' x='666' y='1368'>
+            <zone h='97264' id='13' param='vert' type-v2='layout-flow' w='98668' x='666' y='1368'>
+              <zone h='7180' id='14' type-v2='title' w='98668' x='666' y='1368'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90084' id='8' param='horz' type-v2='layout-flow' w='98668' x='666' y='8548'>
+                <zone h='90084' id='6' type-v2='layout-basic' w='98668' x='666' y='8548'>
+                  <zone h='25044' id='3' name='Monthly Pedestrian Trend' w='98668' x='666' y='8548'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='65040' id='5' name='Day-Hour Heatmap' w='49326' x='666' y='33592'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='65040' id='10' name='Sensor Activity Map' w='49342' x='49992' y='33592'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Melbourne Pedestrian Activity Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97264' id='17' param='vert' type-v2='layout-flow' w='98668' x='666' y='1368'>
+                <zone h='7180' id='14' type-v2='title' w='98668' x='666' y='1368'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='193' h='25044' id='3' is-fixed='true' name='Monthly Pedestrian Trend' w='98668' x='666' y='8548'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65040' id='5' is-fixed='true' name='Day-Hour Heatmap' w='49326' x='666' y='33592'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65040' id='10' is-fixed='true' name='Sensor Activity Map' w='49342' x='49992' y='33592'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2D0FD672-B4E9-4C6B-85EB-D7933C7E7CDD}' />
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='worksheet' name='Monthly Pedestrian Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160' />
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[qr:MONTH_START:ok]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[yr:MONTH_START:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E5D40F50-4BE8-41A6-A578-911A0C934017}' />
+    </window>
+    <window class='worksheet' name='Day-Hour Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:PEDESTRIAN_COUNT:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:DAY_OF_WEEK:nk]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:HOUR_OF_DAY:qk]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F080C0D7-52F3-41BB-81DE-E62CB5A1276F}' />
+    </window>
+    <window class='worksheet' name='Sensor Activity Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0scovxl1myrqld14c61zq07o2g3t].[avg:PEDESTRIAN_COUNT:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:IS_MAPPABLE:nk]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:LOCATION_ID:ok]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSING_YEAR:qk]</field>
+            <field>[federated.0scovxl1myrqld14c61zq07o2g3t].[none:SENSOR_DISPLAY_NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3B72C707-AFBC-46BE-97B2-A8BAF9020709}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Melbourne Pedestrian Dashboard'>
+      <viewpoints>
+        <viewpoint name='Day-Hour Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Pedestrian Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sensor Activity Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8EC7B1C3-EA21-40BD-9BDC-E60EDCE80696}' />
+    </window>
+  </windows>
+</workbook>
